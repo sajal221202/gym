@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajal Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        /* css reset  */
+        font-family: 'Bhai Baloo', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym1.jpg');
+        height: 100px;
+        color: white;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid red; */
+        left: 40px;
+        top: 19px;
+    }
+
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 62%;
+        margin: 19px auto;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        right: 40px;
+        top: 25px;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 24px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .left img {
+        width: 80px;
+        filter: invert(100%);
+        margin: 5px 25px;
+    }
+
+    .left div {
+        text-align: center;
+        text-align: center;
+
+    }
+
+    .btn {
+        margin: 2px 5px;
+        background-color: black;
+        color: white;
+        padding: 3px 14px;
+        border: 2px solid grey;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Bhai Baloo', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(113, 111, 111);
+    }
+
+    .container {
+        border: 2px solid pink;
+        margin: 120px 40px;
+        padding: 35px 35px;
+        width: 30%;
+        border-radius: 19px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 6px 8px;
+        border: 2px solid grey;
+        margin: 8px auto;
+        font-size: 20px;
+        font-weight: 200;
+        border-radius: 5PX;
+
+    }
+
+    .h1 {
+        text-align: center;
+        margin: 22px auto;
+        font-size: 30px;
+    }
+
+    .bt1 {
+        border: 2px solid grey;
+        margin: auto;
+        display: block;
+        width: 265px;
+        text-align: center;
+        margin: 25px auto;
+        border-radius: 25px;
+        padding: 3px 3px;
+    }
+
+    .bt1:hover {
+        background-color: rgb(39, 192, 39);
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/dumbbell-35686.png" alt="">
+            <div>
+                SAJAL FITNESS
+            </div>
+        </div>
+        <!-- mide box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right box for search bar -->
+        <div class="right">
+            <button class="btn">CALL US</button><button class="btn">EMAIL US</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1 class="h1">JOIN THE BEST GYM OF INDORE NOW</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="bt1">SUBMIT</div>
+        </form>
+    </div>
+
+</body>
+</html>
